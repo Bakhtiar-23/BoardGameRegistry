@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Board Games</title>
+  <h1>Board Games</h1>
+<ul>
+  {% for boardgame in boardgames %}
+    <li>{{ boardgame.title }} - {{ boardgame.description }}</li>
+  {% endfor %}
+</ul>
+</head>
+<body>
+
+</body>
+</html>

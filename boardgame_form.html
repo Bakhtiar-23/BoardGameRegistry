@@ -1,0 +1,8 @@
+<!-- boardgames/templates/boardgames/boardgame_form.html -->
+<h1>{% if form.instance.pk %}Edit{% else %}Add{% endif %} Board Game</h1>
+<form method="post" action="">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Save</button>
+</form>
+

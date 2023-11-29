@@ -1,0 +1,8 @@
+<!-- boardgames/templates/boardgames/borrow_game.html -->
+<h1>Borrow {{ boardgame.title }}</h1>
+<form method="post" action="">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Borrow</button>
+</form>
+
